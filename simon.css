@@ -1,65 +1,67 @@
-#top-left {
-    background-color: green;
-    clip: rect(0px, 200px, 200px, 0px);
+.wrapper{
+  width: 500px;
+  height: 500px;
+  margin: auto;
+}
+.board{
+  width: 250px;
+  height: 250px;
+  float: left;
+  border: 5px solid #A5A5A5
+}
+#tl{
+  background: green;
+  border-top-left-radius: 100%;
+  border-top: 20px solid;
+  border-right: 10px solid;
+  border-bottom: 10px solid;
+  border-left: 20px solid;
+}
+#tr{
+  background: red;
+  border-top-right-radius: 100%;
+  border-top: 20px solid;
+  border-right: 20px solid;
+  border-bottom: 10px solid;
+  border-left: 10px solid;
+}
+#bl{
+  background: yellow;
+  border-bottom-left-radius: 100%;
+  border-top: 10px solid;
+  border-right: 10px solid;
+  border-bottom: 20px solid;
+  border-left: 20px solid;
+}
+#br{
+  background: blue;
+  border-bottom-right-radius: 100%;
+  border-top: 10px solid;
+  border-right: 20px solid;
+  border-bottom: 20px solid;
+  border-left: 10px solid;
 }
 
-#top-right {
-    background-color: red;
-    clip: rect(0px, 400px, 200px, 200px);
-}
-
-#bottom-left {
-    background-color: yellow;
-    clip: rect(200px, 200px, 400px, 0px);
-}
-
-#bottom-right {
-    background-color: blue;
-    clip: rect(200px, 400px, 400px, 200px);
-}
-
-.wrapper {
-    height: 400px;
-    width: 400px;
-    -moz-border-radius: 50%;
-    -webkit-border-radius: 50%;
-    -o-border-radius: 50%;
-    border-radius: 50%;
-    float:left;
-    margin-right:20px;
-    margin-left:50px;
-}
-
-.board {
-    height: 400px;
-    width: 400px;
-    float: left;
-    position: absolute;
-    border: 10px solid #383838;
-    -moz-border-radius: 50%;
-    -webkit-border-radius: 50%;
-    -o-border-radius: 50%;
-    border-radius: 50%;
-}
-
-.controller {
-    float:left;
-    margin-top:150px;
-}
-.board-container{
-	width:700px;
-	margin:auto;
+.controller{
+position: absolute;
+background-color: #FFF;
+border-radius: 100%;
+height: 250px;
+width: 250px;
+margin: 125px 0 0 125px;
+border: 12px solid;
 }
 
 .round{
-	font-size:20px;
-	font-weight:bold;
+  margin-top: 30px;
+  font-size: 20px;
+  font-weight: bold;
 }
 
-.disable-click{
-	pointer-events: none;
+.selected{
+  opacity: .75;
 }
-.enable-click{
-	pointer-events:auto;
-	cursor:pointer;
+
+.inactive{
+  opacity: .5;
 }
