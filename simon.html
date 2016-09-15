@@ -12,36 +12,30 @@
     <title></title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
-    <script src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
     <!-- Latest compiled and minified CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
-    <!-- Optional theme -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <!-- Latest compiled and minified JavaScript -->
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
     <script src="simon.js"></script>
     <link rel="stylesheet" href="simon.css">
-    <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
 </head>
 
 <body>
     <div class="container">
         <h1 class="text-center">Simon</h1>
-        <div class="board-container">
-       <div class="wrapper">
-            <div id="top-left" data-panel="1" class="board disable-click"></div>
-            <div id="top-right" data-panel="2" class="board disable-click"></div>
-            <div id="bottom-left" data-panel="3" class="board disable-click"></div>
-            <div id="bottom-right" data-panel="4" class="board disable-click"></div>
+        <div class="wrapper">
+                <div id="tl" class="board disable-click" data-id='1'></div>
+                <div id="tr" class="board disable-click" data-id='2'></div>
+                <div id="bl" class="board disable-click" data-id='3'></div>
+                <div id="br" class="board disable-click" data-id='4'></div>
+                <div class="controller text-center">
+                    <p class="round">Round: <span class="roundNum"></span></p>
+                    <button id="start" type="button" class="btn btn-success">Start</button>
+                    <button id = "strict" type="button" class="btn inactive btn-warning">Strict</button>
+                </div>
         </div>
-         <div class="controller"><p class="round">Round: <span class="roundNum"></span></p>
-         <button id="start" type="button" class="btn btn-success">Start</button>
-            <button type="button" class="btn btn-warning">Strict</button>
 
-         </div>
-         </div>
     </div>
 </body>
 
